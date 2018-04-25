@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Log_v1</string>
+    <string name="blank_name">БЛАНК ПЕРЕКЛЮЧЕНИЯ №</string>
+    <string name="begin_time">Начало</string>
+    <string name="hour">ч.</string>
+    <string name="minute">мин.</string>
+    <string name="electrostation">Электростанция</string>
+    <string name="date">дата</string>
+    <string name="year">201</string>
+    <string name="year_short">г.</string>
+    <string name="substation">Подстанция</string>
+    <string name="referense_scheme">Исходная схема</string>
+    <string name="task">Задание</string>
+    <string name="sequence">Последовательность производства операция при переключении</string>
+    <string name="p1">1.</string>
+    <string name="p2">2.</string>
+    <string name="p3">3.</string>
+    <string name="p4">4.</string>
+    <string name="p5">5.</string>
+    <string name="p6">6.</string>
+    <string name="p7">7.</string>
+    <string name="p8">8.</string>
+    <string name="p9">9.</string>
+    <string name="p10">10.</string>
+    <string name="p11">11.</string>
+    <string name="p12">12.</string>
+    <string name="blank_filled">Бланк заполнил и</string>
+    <string name="switching_doing">переключение производит</string>
+    <string name="blank_checked">Бланк проверил и</string>
+    <string name="switching_controlling">переключение контролирует</string>
+    <string name="switching_allowed">Переключение разрешаю</string>
+    <string name="sign">подпись</string>
+
+</resources>

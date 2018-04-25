@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/blank_title_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/blank_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/blank_name"
+                    android:textAlignment="viewEnd"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/blank_number_input"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blank_date_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/blank_title_layout"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/blank_begin_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/begin_time"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/hour_input"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/hour_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hour"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/minute_input"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/minute_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/minute"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/station_and_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/blank_date_layout">
+
+                <TextView
+                    android:id="@+id/electrostation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/electrostation"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/electrostation_name_input"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/date"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/date_input"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/year_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/year"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/year_input"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/year_short_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/year_short"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/substation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/station_and_date_layout" >
+
+                <TextView
+                    android:id="@+id/substation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/substation"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/substation_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/referense_scheme_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/substation_layout" >
+
+                <TextView
+                    android:id="@+id/referense_scheme_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/referense_scheme"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/referense_scheme_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/referense_scheme_layout" >
+
+                <TextView
+                    android:id="@+id/task_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/task"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/task_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_line2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/task_layout" >
+
+                <EditText
+                    android:id="@+id/task_line_2_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sequence_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/task_line2_layout" >
+
+                <TextView
+                    android:id="@+id/sequence_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="@string/sequence"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/sequence_layout" >
+
+                <TextView
+                    android:id="@+id/p1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p1"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p1_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p1_layout" >
+
+                <TextView
+                    android:id="@+id/p2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p2"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p2_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p2_layout" >
+
+                <TextView
+                    android:id="@+id/p3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p3"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p3_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p3_layout" >
+
+                <TextView
+                    android:id="@+id/p4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p4"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p4_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p5_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p4_layout" >
+
+                <TextView
+                    android:id="@+id/p5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p5"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p5_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p6_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p5_layout" >
+
+                <TextView
+                    android:id="@+id/p6_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p6"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p6_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p7_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p6_layout" >
+
+                <TextView
+                    android:id="@+id/p7_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p7"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p7_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p8_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p7_layout" >
+
+                <TextView
+                    android:id="@+id/p8_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p8"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p8_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p9_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p8_layout" >
+
+                <TextView
+                    android:id="@+id/p9_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p9"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p9_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p10_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p9_layout" >
+
+                <TextView
+                    android:id="@+id/p10_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p10"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p10_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p11_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p10_layout" >
+
+                <TextView
+                    android:id="@+id/p11_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p11"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p11_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p12_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/p11_layout" >
+
+                <TextView
+                    android:id="@+id/p12_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/p12"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/p12_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blank_filled_and_switching_doing_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/p12_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/blank_filled_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/blank_filled"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/switching_doing_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/switching_doing"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/sign_1_input"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/sign_1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/sign"
+                    android:textAlignment="center"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blank_checked_and_switching_controlling_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/p12_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/blank_checked_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/blank_checked"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/switching_controlling_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/switching_controlling"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/sign_2_input"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/sign_2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/sign"
+                    android:textAlignment="center"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/switching_allowing_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/blank_filled_and_switching_doing_layout"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/switching_allowing_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/switching_allowed"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/sign_3_input"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/sign_3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/sign"
+                    android:textAlignment="center"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
